@@ -380,9 +380,17 @@ header ul li a {
 
 .about-picture img {
     width: 300px;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     height: auto;
     margin-left: -950px;
     margin-top: 50px;
+    transition: transform 1.5s ease, box-shadow 1s ease;
+}
+
+.about-picture img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-text {
