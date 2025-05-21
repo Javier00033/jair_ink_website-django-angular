@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.5, user-scalable=0">
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="index-body">
+    <header>
+        <div class="header-buttons">
+            <a href="/" class="btn btn-home">Home</a>
+            <a href="{% url 'about' %}" class="btn btn-about">Acerca de mí</a>
+            <a href="{% url 'faq' %}" class="btn btn-faq">Preguntas frecuentes</a>
+        </div>
+    </header>
+    <header id="home-header">
+        <div class="header-content">
+            <div class="logo-placeholder">
+                <img src="{% static 'home/images/logo.jpg' %}" alt="Logotipo de Jair Ink">
+            </div>
+            <div class="header-text">
+                <p>"Donde la belleza cobra vida en tu piel"</p>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="{% static 'home/images/collage.jpg' %}" alt="Decoración">
+        </div>
+    </header>
+
+    <section id="info">
+        <p>
+            "Soy un artista apasionado por transformar ideas y emociones en arte que vive en la piel. Cada trazo que realizo cuenta una historia única, un recuerdo, un sueño o una expresión personal. Mi misión es capturar la esencia de cada cliente y plasmarla con dedicación, precisión y creatividad. 
+            El tatuaje no es solo un diseño; es una conexión entre el arte y la identidad, una obra que acompaña a quien la lleva para siempre. En cada proyecto, pongo mi corazón y mi experiencia para crear algo que no solo sea visualmente hermoso, sino también profundamente significativo.
+            Bienvenido a un espacio donde el arte cobra vida y donde cada detalle importa. Aquí, tu piel se convierte en el lienzo de una obra maestra que será tan única como tú."
+        </p>
+    </section>
+
+    <section id="gallery">
+        <div class="gallery-container">
+            <h2>"Arte que vive en tu piel"</h2>
+            <div class="gallery-row">
+                <img src="{% static 'home/images/img1.jpg' %}" alt="Tatuaje 1">
+                <img src="{% static 'home/images/img2.jpg' %}" alt="Tatuaje 2">
+                <img src="{% static 'home/images/img4.jpg' %}" alt="Tatuaje 4">
+                <img src="{% static 'home/images/img5.jpg' %}" alt="Tatuaje 5">
+                <img src="{% static 'home/images/img6.jpg' %}" alt="Tatuaje 6">
+                <img src="{% static 'home/images/img3.jpg' %}" alt="Tatuaje 3">
+                <img src="{% static 'home/images/img7.jpg' %}" alt="Tatuaje 7">
+                <img src="{% static 'home/images/img8.jpg' %}" alt="Tatuaje 8">
+                <img src="{% static 'home/images/img9.jpg' %}" alt="Tatuaje 9">
+                <img src="{% static 'home/images/img10.jpg' %}" alt="Tatuaje 10">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2><strong>Servicios</strong></h2>
+                <div class="services-grid">
+                    <div class="service-item" data-service="Creación de diseños">
+                        <p>Creación de diseños</p>
+                        <img src="{% static 'home/images/design.jpg' %}" alt="Diseño">
+                    </div>
+                    <div class="service-item" data-service="Retoques">
+                        <p>Retoques</p>
+                        <img src="{% static 'home/images/retouch.jpg' %}" alt="Retoque">
+                    </div>
+                    <div class="service-item" data-service="Restauraciones">
+                        <p>Restauraciones</p>
+                        <img src="{% static 'home/images/restauration.jpg' %}" alt="Restauraciones">
+                    </div>
+                    <div class="service-item" data-service="Realismo">
+                        <p>Realismo</p>
+                        <img src="{% static 'home/images/realism.jpg' %}" alt="Realismo">
+                    </div>
+                    <div class="service-item" data-service="Microrealismo">
+                        <p>Microrealismo</p>
+                        <img src="{% static 'home/images/microrealism.jpg' %}" alt="Surrealismo">
+                    </div>
+                    <div class="service-item" data-service="Tatuajes compuestos">
+                        <p>Tatuajes compuestos</p>
+                        <img src="{% static 'home/images/compound.jpg' %}" alt="Compuestos">
+                    </div>
+                    <div class="service-item" data-service="Línea fina">
+                        <p>Línea fina</p>
+                        <img src="{% static 'home/images/fineline.jpg' %}" alt="Línea fina">
+                    </div>
+                    <div class="service-item" data-service="Minimalistas">
+                        <p>Minimalistas</p>
+                        <img src="{% static 'home/images/minimalist.png' %}" alt="Minimalistas">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Visítenos o reserve su cita en línea</strong></p>
+                <p><strong>Dirección:</strong> Calz. de Ayestaran, 110 e/ Sta. Anna y Ferrer, La Habana, Cuba</p>
+                <p><strong>Teléfono:</strong> +5353108003</p>
+                <p><strong>Email:</strong> jairinklahabana@gmail.com</p>
+                <a href="https://wa.me/+5353108003?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20en%20Jair%20Ink"
+                   class="whatsapp-button" target="_blank">Agendar cita</a>
+            </div>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2181.966708152072!2d-82.38940106726498!3d23.111150049355725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1747080622516!5m2!1ses!2sus"
+                    width="100" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'home/scripts.js' %}"></script>
+</body>
+<footer id="footer-index">
+    <div>
+        <p>&copy; 2025 Jair Ink. Todos los derechos reservados.</p>
+        <div class="social-media-btn">
+            <a href="https://www.instagram.com/jair_gutierrez94/"><img src="{% static 'home/images/instagram.png' %}" alt="Foto de instagram" width="70px" height="70px" class="btn-inst"></a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.5, user-scalable=no">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-buttons">
+            <a href="/" class="btn btn-home">Home</a>
+            <a href="{% url 'about' %}" class="btn btn-about">Acerca de mí</a>
+            <a href="{% url 'faq' %}" class="btn btn-faq">Preguntas frecuentes</a>
+        </div>
+    </header>
+    <header id="about">
+        <section id="about-content">
+            <div class="about-name">
+                <h2><strong>Jair Gutiérrez Arada</strong></h2>
+            </div>
+            <div class="about-picture">
+                <img src="{% static 'home\images\profile.png' %}" alt="Foto de perfil">
+            </div>
+            <div class="about-text">
+                <p>
+                    Ingresar CV
+                </p>
+            </div>
+            <div class="about-styles">
+                <h2><strong>Estilos</strong></h2>
+                <p>Ingresar estilos</p>
+            </div>
+        </section>
+    </header>
+</body>
+<footer id="footer-about">
+    <div>
+        <p>&copy; 2025 Jair Ink. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>
